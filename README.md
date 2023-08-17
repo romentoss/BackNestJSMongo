@@ -20,32 +20,35 @@ npmi -g nestjs/cli
 docker-compose up -d
 ```
 
-5. Reconstruir la base de datos con la semilla
+5. Clonar el archivo ```__.env.template__``` ,luego renombrar la copia a __.env__ y 
+   llenar las variables de entorno definidas en el ```.env``` 
+
+6. Reconstruir la base de datos con la semilla
 ```
 http://localhost:3000/api/v2/seed
 ```
 
-6. Recoger todos los datos 
+7. Recoger todos los datos 
 ```
 http://localhost:3000/api/v2/pokemon
 ```
 
-7. Buscar por una propiedad
+8. Buscar por una propiedad
 ```
 http://localhost:3000/api/v2/pokemon/{name,number,Mongo_id}
 ```
 
-7. Eliminar un registro
+9. Eliminar un registro
 ```
 http://localhost:3000/api/v2/pokemon/{Mongo_id}
 ```
 
-8. Añadir registro
+10. Añadir registro
 ```
 http://localhost:3000/api/v2/pokemon
 POST{ name:string; no:number }
 ```
-9. Editar registro
+11. Editar registro
 ```
 http://localhost:3000/api/v2/pokemon/{Mongo_id}
 PATCH{ name:string; no:number }
