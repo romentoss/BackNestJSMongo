@@ -58,3 +58,12 @@ PATCH{ name:string; no:number }
 ## Stack Usado
 * MongoDB
 * NesjJs
+
+
+# Notas
+
+Heroku redeploy sin cambios:
+```
+git commit --allow-empty -m "Trigger heroku deploy"
+git push heroku master
+```
